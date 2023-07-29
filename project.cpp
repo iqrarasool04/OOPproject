@@ -48,6 +48,9 @@ class Piano{
 }
 class Sound: public Piano{
     private:
+
+    public:
+    
 }
 class Keyboard: public Piano{
 
