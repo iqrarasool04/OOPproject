@@ -45,13 +45,13 @@ class Piano{
     double get_freq(){
         return frequency;
     }  
-}
+};
 class Sound: public Piano{
     private:
 
     public:
     
-}
+};
 class Keyboard: public Piano{
 
-}
+;
