@@ -20,7 +20,7 @@ using namespace std;
 class Instrument {
 public:
     virtual void playSound(const string& note) = 0;
-    virtual ~Instrument() {}
+    
 };
 
 class Piano : public Instrument {
