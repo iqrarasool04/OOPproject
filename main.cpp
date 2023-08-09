@@ -1,6 +1,10 @@
 #include "Piano.h"
 
+
 int main() {
+
+    //With GUI
+
     Sound::loadNotes();
 
     // Create a window
@@ -52,6 +56,34 @@ int main() {
     }
 
     delete[] noteNames;
+
+    /* With Keyboard
+   // Create instances of Piano and Sound
+    Piano piano;
+    Sound sound;
+
+    // Load notes for the Sound class
+    sound.loadNotes();
+
+    cout << "Enter a note (e.g., C, D#, F) or 'exit' to quit: ";
+    string userNote;
+
+    while (cin >> userNote) {
+        if (userNote == "exit") {
+            break;
+        }
+
+        // Set the note in the Piano class
+        piano.setNote(userNote);
+
+        // Play the sound using both the Piano and Sound classes
+        piano.playSound(userNote);
+        sound.playSound(userNote);
+
+        cout << "Enter a note (e.g., C, D#, F) or 'exit' to quit: ";
+    }
+    */
+
 
     return 0;
 }
