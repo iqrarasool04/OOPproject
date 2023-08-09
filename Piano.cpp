@@ -27,26 +27,16 @@ void Piano::playSound(const string& note) {
         notes[i] = baseFrequency * pow(2, i / 12.0);
     }
 
-    //exception handling
-    try {
-        int index = -1;
-        for (int i = 0; i < 12; ++i) {
-            if (notes[i] == frequency) {
-                index = i;
-                break;
-            }
-        }
-
-        if (index != -1) {
-            cout << "Piano sound: " << note << endl;
-        }
-        else {
-            // If the note is not found in the notes array, throw an exception
-            throw "Note not found"; 
+    int index = -1;
+    for (int i = 0; i < 12; ++i) {
+        if (notes[i] == frequency) {
+            index = i;
+            break;
         }
     }
-    catch (const char* errorMessage) {
-        cerr << errorMessage << ": " << note << endl;
+
+    if (index != -1) {
+        cout << "Piano sound: " << note << endl;
     }
 }
 
