@@ -55,34 +55,34 @@ int main() {
         window.display();
     }
 
+
     delete[] noteNames;
 
-    /* With Keyboard
-   // Create instances of Piano and Sound
-    Piano piano;
-    Sound sound;
+   // // With Keyboard
+   //// Create instances of Piano and Sound
+   // Piano piano;
+   // Sound sound;
 
-    // Load notes for the Sound class
-    sound.loadNotes();
+   // // Load notes for the Sound class
+   // sound.loadNotes();
 
-    cout << "Enter a note (e.g., C, D#, F) or 'exit' to quit: ";
-    string userNote;
+   // cout << "Enter a note (C, C#, D, D#, E, F, F#, G, G#, A, A#, B) or 'exit' to quit: ";
+   // string userNote;
 
-    while (cin >> userNote) {
-        if (userNote == "exit") {
-            break;
-        }
+   // while (cin >> userNote) {
+   //     if (userNote == "exit") {
+   //         break;
+   //     }
 
-        // Set the note in the Piano class
-        piano.setNote(userNote);
+   //     // Set the note in the Piano class
+   //     piano.setNote(userNote);
 
-        // Play the sound using both the Piano and Sound classes
-        piano.playSound(userNote);
-        sound.playSound(userNote);
+   //     // Play the sound using both the Piano and Sound classes
+   //     piano.playSound(userNote);
+   //     sound.playSound(userNote);
 
-        cout << "Enter a note (e.g., C, D#, F) or 'exit' to quit: ";
-    }
-    */
+   //     cout << "Enter a note (C, C#, D, D#, E, F, F#, G, G#, A, A#, B) or 'exit' to quit: ";
+   // }
 
 
     return 0;
